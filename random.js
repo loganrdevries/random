@@ -4,16 +4,40 @@ var namespace = "http://www.w3.org/2000/svg"
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
-function createFirstScene() {
-    
-}
 
+function createFirstScene() {
+    document.body.style.backgroundColor = "DarkSlateBlue";
+    makeRect(1, 0, 1000, 1000, "DarkSlateBlue", 1);
+    makeCircle(21, 10, 5, "RoyalBlue", 0.5);
+    makeCircle(50, 40, 2, "RoyalBlue", 0.5);
+    makeCircle(20, 15, 5, "RoyalBlue", 0.5);
+    makeCircle(60, 30, 4, "RoyalBlue", 0.5);
+    makeCircle(30, 60, 5, "RoyalBlue", 0.5);
+    makeCircle(90, 40, 3, "RoyalBlue", 0.5);
+    makeCircle(80, 80, 2, "RoyalBlue", 0.5);
+    makeCircle(150, 6, 4, "RoyalBlue", 0.5);
+    makeCircle(175, 60, 4, "RoyalBlue", 0.5);
+    
+    makeRect(1, 90, 500, 100, "grey", 1);
+    makeEllipse(30,80, 7, 10, "purple", 1);
+    makeCircle(30, 73, 3, "dark purple", 1);
+    makeEllipse(175,80, 7, 5, "purple", 1);
+    makeCircle(175, 73, 3, "dark purple", 1);
+    
+    makeEllipse(140,25, 45, 15, "yellow", 1);
+    makeEllipse(140,35, 30, 10, "yellow", 1);
+    makeCircle(175, 60, 4, "RoyalBlue ", 0.5);
+
+ 
+}
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    makeRect(1, 0, 1000, 1000, "DarkSlateBlue", 1);
+
+    makeRect(40, 14, 200, 30, "yellow", 1);
 }
 
 
@@ -21,7 +45,8 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+makeRect(1, 0, 1000, 1000, "DarkSlateBlue", 1);
+    makeEllipse(30, 50, 20, 60, "red", 1);
 }
 
 
@@ -32,19 +57,19 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var rand1 = Math.random();
     // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
+    if (rand1 < 0.33) {
+        createFirstScene()
+    }
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    
-    
-    
+    else if (rand1 < 0.67) {
+        createSecondScene()
+    }
     // Else, call the function to create your third scene.
-    
-    
-    
+        else if (rand1 < 0.90) {
+        createThirdScene()
+        }
 }
 
 
