@@ -38,9 +38,13 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.                      DarkSlateBlue
 function createSecondScene() {
-    makeRect(1, 0, 1000, 1000, "Black", 1);
+        document.body.style.backgroundColor = "DarkSlateGray  ";
 
-    makeRect(40, 14, 200, 30, "yellow", 1);
+    makeRect(1, 0, 1000, 1000, "Black ", 1);
+    makeCircle(130, 23, 5, "Deepskyblue ", 0.6);
+        makeCircle(130, 23, 5, "Deepskyblue ", 0.6);
+
+
 }
 
 
