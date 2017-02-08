@@ -21,21 +21,24 @@ function createFirstScene() {
     makeRect(1, 90, 500, 100, "grey", 1);
     makeEllipse(30,80, 7, 10, "purple", 1);
     makeCircle(30, 73, 3, "dark purple", 1);
-    makeEllipse(175,80, 7, 5, "purple", 1);
+    makeEllipse(175,80, 7, 10, "purple", 1);
     makeCircle(175, 73, 3, "dark purple", 1);
     
-    makeEllipse(140,25, 45, 15, "yellow", 1);
-    makeEllipse(140,35, 30, 10, "yellow", 1);
-    makeCircle(175, 60, 4, "RoyalBlue ", 0.5);
+    makeEllipse(140,25, 45, 15, "gold", 1);
+    makeEllipse(170,25, 30, 10, "gold", 1);
+    makeCircle(130, 23, 5, "Deepskyblue ", 0.6);
+    makeRect(130, 0, 10, 12, "gold", 1);
+    makeEllipse(135,2, 5, 2, "Deepskyblue", 0.6);
+
 
  
 }
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
-// Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
+// Remember, for the shapes to show up on the canvas, you'll need to CALL the function.                      DarkSlateBlue
 function createSecondScene() {
-    makeRect(1, 0, 1000, 1000, "DarkSlateBlue", 1);
+    makeRect(1, 0, 1000, 1000, "Black", 1);
 
     makeRect(40, 14, 200, 30, "yellow", 1);
 }
