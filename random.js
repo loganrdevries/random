@@ -6,7 +6,12 @@ var namespace = "http://www.w3.org/2000/svg"
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 
 function createFirstScene() {
-    makeImage("https://pbs.twimg.com/profile_images/716986458406424576/8AOacOOQ.jpg", 130, 23, 5, 0.6)
+    var rand1 = Math.random()
+   if (rand1 < 0.53) {
+        createFirstScene()
+    }else{
+        makeImage("https://imgs-tuts-dragoart-386112.c.cdn77.org/how-to-draw-a-nuke-nuclear-blast_1_000000015431_5.png", 50, 50, 50, 40, 0.5)
+    } makeImage("https://pbs.twimg.com/profile_images/716986458406424576/8AOacOOQ.jpg", 130, 23, 5, 0.6)
     document.body.style.backgroundColor = "DarkSlateBlue";
     
     makeRect(1, 0, 1000, 1000, "DarkSlateBlue", 1);
@@ -53,6 +58,8 @@ function createSecondScene() {
             makeCircle(60, 73, 6, "grey", 1);
             makeCircle(30, 95, 5, "grey", 1);
             makeCircle(130, 80, 7, "grey", 1);
+            makeEllipse(115, 85, 6, 9, "grey", 1)
+
 
     
     makeRect(130, 23, 3, 2, "ForestGreen ", 1);
@@ -85,7 +92,9 @@ makeRect(50, 50, 10, 30, "brown", 1)
     
         makeCircle(175, 14, 14, "white", 1)
         makeCircle(175, 14, 12, "darkorange", 1)
-        m
+        
+        makeEllipse(75, 20, 15, 9, "grey", 0.9)
+        makeEllipse(115, 20, 15, 9, "grey", 0.9)
 
 }
 
