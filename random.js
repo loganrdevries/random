@@ -6,7 +6,9 @@ var namespace = "http://www.w3.org/2000/svg"
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 
 function createFirstScene() {
+    makeImage("https://pbs.twimg.com/profile_images/716986458406424576/8AOacOOQ.jpg", 130, 23, 5, 0.6)
     document.body.style.backgroundColor = "DarkSlateBlue";
+    
     makeRect(1, 0, 1000, 1000, "DarkSlateBlue", 1);
     makeCircle(21, 10, 5, "RoyalBlue", 0.5);
     makeCircle(50, 40, 2, "RoyalBlue", 0.5);
@@ -30,7 +32,7 @@ function createFirstScene() {
     makeRect(130, 0, 10, 12, "gold", 1);
     makeEllipse(135,2, 5, 2, "Deepskyblue", 0.6);
 
-
+makeImage("https://pbs.twimg.com/profile_images/716986458406424576/8AOacOOQ.jpg", 120, 20, 20, 7,0.6)
  
 }
 
@@ -41,9 +43,24 @@ function createSecondScene() {
         document.body.style.backgroundColor = "DarkSlateGray  ";
 
     makeRect(1, 0, 1000, 1000, "Black ", 1);
-    makeCircle(130, 23, 5, "Deepskyblue ", 0.6);
-        makeCircle(130, 23, 5, "Deepskyblue ", 0.6);
+        makeCircle(130, 23, 5, "blue ", 1);
+        makeCircle(90, 160, 100, "Gainsboro ", 1);
+    
+            makeCircle(100, 70, 7, "grey", 1);
+            makeCircle(80, 90, 5, "grey", 1);
+            makeCircle(110, 100, 6, "grey", 1);
+            makeCircle(75, 80, 8, "grey", 1);
+            makeCircle(60, 73, 6, "grey", 1);
+            makeCircle(30, 95, 5, "grey", 1);
+            makeCircle(130, 80, 7, "grey", 1);
 
+    
+    makeRect(130, 23, 3, 2, "ForestGreen ", 1);
+    makeRect(129, 24, 3, 2, "ForestGreen ", 1);
+    makeRect(128, 22, 3, 2, "ForestGreen ", 1);
+    makeRect(129, 19, 3, 2, "ForestGreen ", 1);
+
+    makeImage("http://vignette2.wikia.nocookie.net/muppet/images/1/1d/Ss20yrs2.jpg/revision/latest?cb=20100507024618", 50, 10, 50, 50, 0.2)
 
 }
 
@@ -52,8 +69,24 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-makeRect(1, 0, 1000, 1000, "DarkSlateBlue", 1);
-    makeEllipse(30, 50, 20, 60, "red", 1);
+        document.body.style.backgroundColor = "Khaki ";
+makeRect(1, 0, 1000, 1000, "khaki ", 1);
+        makeRect(1, 80,500, 100, "saddlebrown", 1);
+
+       
+makeRect(50, 50, 10, 30, "brown", 1)
+    makeCircle(55, 45, 15, "crimson", 1)
+    
+    makeRect(90, 50, 10, 30, "brown", 1)
+    makeCircle(95, 45, 15, "goldenrod", 1)
+    
+    makeRect(130, 50, 10, 30, "brown", 1)
+    makeCircle(135, 45, 15, "orange", 1)
+    
+        makeCircle(175, 14, 14, "white", 1)
+        makeCircle(175, 14, 12, "darkorange", 1)
+        m
+
 }
 
 
