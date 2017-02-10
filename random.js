@@ -7,10 +7,10 @@ var namespace = "http://www.w3.org/2000/svg"
 
 function createFirstScene() {
     var rand1 = Math.random()
-   if (rand1 < 0.53) {
+   if (rand1 < 0.10) {
         createFirstScene()
-    }else{
-        makeImage("https://imgs-tuts-dragoart-386112.c.cdn77.org/how-to-draw-a-nuke-nuclear-blast_1_000000015431_5.png", 50, 50, 50, 40, 0.5)
+        }else{
+makeImage("https://imgs-tuts-dragoart-386112.c.cdn77.org/how-to-draw-a-nuke-nuclear-blast_1_000000015431_5.png", 90, 30, 50, 50, 0.5)
     } makeImage("https://pbs.twimg.com/profile_images/716986458406424576/8AOacOOQ.jpg", 130, 23, 5, 0.6)
     document.body.style.backgroundColor = "DarkSlateBlue";
     
@@ -45,8 +45,7 @@ makeImage("https://pbs.twimg.com/profile_images/716986458406424576/8AOacOOQ.jpg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.                      DarkSlateBlue
 function createSecondScene() {
-        document.body.style.backgroundColor = "DarkSlateGray  ";
-
+      
     makeRect(1, 0, 1000, 1000, "Black ", 1);
         makeCircle(130, 23, 5, "blue ", 1);
         makeCircle(90, 160, 100, "Gainsboro ", 1);
@@ -76,6 +75,8 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
+    
+
         document.body.style.backgroundColor = "Khaki ";
 makeRect(1, 0, 1000, 1000, "khaki ", 1);
         makeRect(1, 80,500, 100, "saddlebrown", 1);
@@ -108,15 +109,15 @@ function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
     var rand1 = Math.random();
     // If the number is less than 0.33, call the function to create your first scene.
-    if (rand1 < 0.33) {
+    if (rand1 < 0.30) {
         createFirstScene()
     }
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    else if (rand1 < 0.67) {
+    else if (rand1 < 0.60) {
         createSecondScene()
     }
     // Else, call the function to create your third scene.
-        else if (rand1 < 0.90) {
+        else if (rand1 < 90) {
         createThirdScene()
         }
 }
